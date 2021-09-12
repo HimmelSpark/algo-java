@@ -8,5 +8,7 @@ public class Main {
             System.out.printf("N = %d, cyclic fibo: %d, recursive fibo: %d", i, Fibo.getFibo(i), Fibo.getFiboRec(i));
             System.out.println();
         }
+        Fibo fibo = new Fibo(N);
+        System.out.printf("Optimized fibo for N = %d: %d", N, fibo.getFiboRecOptimized(N));
     }
 }
