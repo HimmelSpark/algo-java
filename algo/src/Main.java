@@ -3,6 +3,7 @@ public class Main {
         fibo(10);  // 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
         isPrime(367, 168);
         fastPower();
+        fasterPower();
     }
 
     private static void fibo(int N) {
@@ -26,6 +27,15 @@ public class Main {
         System.out.printf("%d to power of %d = %d Math: %.0f", 2, 16, FastPower.fastPower(3, 10), Math.pow(3, 10));
         System.out.println();
         System.out.printf("%d to power of %d = %d Math: %.0f", 17, 5, FastPower.fastPower(17, 5), Math.pow(17, 5));
+        System.out.println();
+    }
+
+    private static void fasterPower() {
+        System.out.printf("%.0f to fasterPower of %.0f = %.0f Math: %.0f", 2.0, 16.0, FastPower.fasterPower(2, 16), Math.pow(2, 16));
+        System.out.println();
+        System.out.printf("%.0f to fasterPower of %.0f = %.0f Math: %.0f", 2.0, 16.0, FastPower.fasterPower(3, 10), Math.pow(3, 10));
+        System.out.println();
+        System.out.printf("%.0f to fasterPower of %.0f = %.0f Math: %.0f", 17.0, 5.0, FastPower.fasterPower(17, 5), Math.pow(17, 5));
         System.out.println();
     }
 }
